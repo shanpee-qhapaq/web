@@ -7,18 +7,6 @@
 </head>
 <body>
     <h1>簡単な電卓</h1>
-    <form method="POST">
-        <input type="number" name="num1" step="any" placeholder="1つ目の数字を入力" required>
-        <select name="operator">
-            <option value="add">+</option>
-            <option value="subtract">-</option>
-            <option value="multiply">*</option>
-            <option value="divide">/</option>
-        </select>
-        <input type="number" name="num2" step="any" placeholder="2つ目の数字を入力" required>
-        <button type="submit" name="submit" value="calculate">計算する</button>
-    </form>
-
 <?php
     if (isset($_POST['submit'])) {
         // 入力値を取得
